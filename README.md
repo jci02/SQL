@@ -1,7 +1,7 @@
 # SQL (Structured Query Language)
 Getting solid in SQL.
 
-This repository documents my journey to building strong SQL fundamentals through practical queries and exercises. The focus is on understanding how to retrieve, manipulate, and analyze data efficiently using SQL while working with **relational databases**. All queries in this repository are written and tested using **MySQL**.
+This repository documents my journey to building strong SQL fundamentals through practical queries and exercises. The focus is on understanding how to retrieve, manipulate, and analyze data efficiently using SQL while working with **relational databases**. All queries in this repository are written and tested using **MySQL Workbench**.
 
 The repository is structured around core SQL concepts, progressing from basic queries to more advanced techniques commonly used in real-world data analysis.
 
