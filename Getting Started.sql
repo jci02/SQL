@@ -1,3 +1,7 @@
+/*SQL BASICS*/
+
+-- 1. Create table 
+
 --
 -- Create a student grades database
 --
@@ -123,4 +127,39 @@ INSERT INTO student_grades (semester_id, class_id, department, class_name, stude
 ('SPR_2024', 404, 'General', 'Senior Seminar', 16, 95),
 ('SPR_2024', 404, 'General', 'Senior Seminar', 17, NULL),
 ('SPR_2024', 404, 'General', 'Senior Seminar', 18, NULL);
+
+-- 2 & 3. view the tabele (SELECT, FROM)
+
+SELECT *
+FROM students;
+
+SELECT student_name, gpa, school_lunch
+FROM students;
+
+-- 4. show students who get school lunch (WHERE)
+
+SELECT *
+FROM students
+WHERE school_lunch = "Yes";
+
+SELECT student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes";
+
+-- 5. sort the students by gpa (ORDER BY)
+
+SELECT *
+FROM students
+ORDER BY gpa;
+
+
+-- 6. show the average gpa for each grade level (GROUP BY)
+
+
+-- 7. show the grade levels with an avergae gpa below 3.3 (HAVING)
+
+
+/*THE BIG 6*/
+
+
 
