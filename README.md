@@ -1,21 +1,21 @@
 # SQL (Structured Query Language)
 Getting solid in SQL.
 
-This repository documents my journey to building strong SQL fundamentals through practical queries and exercises. The focus is on understanding how to retrieve, manipulate, and analyze data efficiently using SQL. All queries in this repository are written and tested using **MySQL**.
+This repository documents my journey to building strong SQL fundamentals through practical queries and exercises. The focus is on understanding how to retrieve, manipulate, and analyze data efficiently using SQL while working with **relational databases**. All queries in this repository are written and tested using **MySQL**.
 
-The repository is structured around core SQL concepts, progressing from basic queries to more advanced data analysis techniques commonly used in real-world data work.
+The repository is structured around core SQL concepts, progressing from basic queries to more advanced techniques commonly used in real-world data analysis.
 
 ---
 
 ## Lessons Covered
 
 ### 1. Getting Started With SQL
-Introduction to SQL and relational databases.  
-Learn how SQL is used to interact with structured data and understand the workflow of querying datasets.
+Introduction to SQL and relational databases.
 
 Topics include:
 - What SQL is used for
 - Basic database concepts
+- Understanding relational databases
 - Writing and executing queries
 
 ---
@@ -61,7 +61,7 @@ Topics include:
 ---
 
 ### 6. Joining Data
-Combining information from multiple tables to answer complex questions.
+Combining information from multiple tables within relational databases.
 
 Topics include:
 - `INNER JOIN`
@@ -74,13 +74,14 @@ Topics include:
 ## Goals of This Repository
 
 - Strengthen SQL fundamentals
-- Practice writing efficient queries
+- Practice working with relational databases
+- Write efficient and readable queries
 - Build a reference of commonly used SQL techniques
-- Develop skills useful for data analysis and machine learning workflows
 
 ---
 
 ## Tools Used
 
 - **MySQL**
-- SQL query editor / database client
+- Relational databases
+- SQL query editors / database clients
