@@ -94,4 +94,20 @@ INSERT INTO watch_history VALUES
 (5,4,1,'2024-03-01',4),
 (6,3,3,'2024-03-12',5);
 
+-- INNER JOIN
+SELECT customers.customer_name, orders.order_id, orders.total_amount
+FROM customers
+INNER JOIN orders
+ON customers.customer_id = orders.customer_id;
 
+-- LEFT JOIN
+SELECT customers.customer_name, orders.order_id
+FROM customers
+LEFT JOIN orders
+ON customers.customer_id = orders.customer_id;
+
+-- RIGHT JOIN
+SELECT customers.customer_name, orders.order_id
+FROM customers
+RIGHT JOIN orders
+ON customers.customer_id = orders.customer_id;
