@@ -235,6 +235,8 @@ We can finish the query by pulling the information that we want from the CTE. Th
 <img src="pics/table17.png" width="600"/>
 </p>
 
+You could do this without a CTE, but if this were the first part of a very long query, removing the CTE would make it much harder to follow.
+
 Also, it's important to note that CTEs only exist inside the query where you create them, and you can't reference them in later queries. So, any query that uses a CTE is always broken into two parts: (1) first, we create the CTE, and then (2) we write a query that uses the CTE.
 
 ---
