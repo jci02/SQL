@@ -121,6 +121,22 @@ Notice that the rows are not ordered by the ID column. We can quickly remedy thi
 <img src="pics/table8.png" width="600"/>
 </p>
 
+The ORDER BY clause also works for columns containing text, where the results show up in alphabetical order.
+
+
+<p align="center">
+<img src="pics/table9.png" width="600"/>
+</p>
+
+
+You can reverse the order using the DESC argument (short for 'descending'). The next query sorts the table by the Animal column, where the values that are last in alphabetic order are returned first.
+
+
+
+<p align="center">
+<img src="pics/table10.png" width="600"/>
+</p>
+
 ---
 
 ### 5. AS & WITH
