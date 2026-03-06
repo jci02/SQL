@@ -153,12 +153,27 @@ The DATE format has the year first, then the month, and then the day. It looks l
 So 2019-01-10 is interpreted as January 10, 2019.
 
 The DATETIME format is like the date format ... but with time added at the end.
-EXTRACT
+
+#### EXTRACT
 
 Often you'll want to look at part of a date, like the year or the day. You can do this with EXTRACT. We'll illustrate this with a slightly different table, called pets_with_date.
 
 <p align="center">
 <img src="pics/table11.png" width="600"/>
+</p>
+
+The query below returns two columns, where column Day contains the day corresponding to each entry the Date column from the pets_with_date table:
+
+<p align="center">
+<img src="pics/table12.png" width="600"/>
+</p>
+
+
+SQL is very smart about dates, and we can ask for information beyond just extracting part of the cell. For example, this query returns one column with just the week in the year (between 1 and 53) for each date in the Date column:
+
+
+<p align="center">
+<img src="pics/table13.png" width="600"/>
 </p>
 
 ---
