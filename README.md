@@ -45,6 +45,12 @@ For instance, to select the Name column (from the pets table in the pet_records 
 <img src="pics/table2.png" width="500"/>
 </p>
 
+#### WHERE ...¶
+
+We can return only the rows meeting specific conditions. Do this using the WHERE clause.
+
+The query below returns the entries from the Name column that are in rows where the Animal column has the text 'Cat'.
+
 <p align="center">
 <img src="pics/table3.png" width="500"/>
 </p>
