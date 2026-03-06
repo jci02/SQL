@@ -45,7 +45,7 @@ For instance, to select the Name column (from the pets table in the pet_records 
 <img src="pics/table2.png" width="500"/>
 </p>
 
-#### WHERE ...¶
+#### WHERE ...
 
 We can return only the rows meeting specific conditions. Do this using the WHERE clause.
 
@@ -64,6 +64,38 @@ Topics include:
 - Aggregate functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`)
 - Grouping data using `GROUP BY`
 - Filtering aggregated results with `HAVING`
+
+#### COUNT()
+
+COUNT(), as you may have guessed from the name, returns a count of things. If you pass it the name of a column, it will return the number of entries in that column.
+
+For instance, if we SELECT the COUNT() of the ID column in the pets table, it will return 4, because there are 4 ID's in the table.
+
+<p align="center">
+<img src="pics/table4.png" width="500"/>
+</p>
+
+**COUNT()** is an example of an aggregate function, which takes many values and returns one. (Other examples of aggregate functions include SUM(), AVG(), MIN(), and MAX().)
+
+#### GROUP BY
+
+GROUP BY takes the name of one or more columns, and treats all rows with the same value in that column as a single group when you apply aggregate functions like COUNT().
+
+For example, say we want to know how many of each type of animal we have in the pets table. We can use GROUP BY to group together rows that have the same value in the Animal column, while using COUNT() to find out how many ID's we have in each group.
+
+<p align="center">
+<img src="pics/table5.png" width="500"/>
+</p>
+
+#### GROUP BY ... HAVING
+
+HAVING is used in combination with GROUP BY to ignore groups that don't meet certain criteria.
+
+So this query, for example, will only include groups that have more than one ID in them.
+
+<p align="center">
+<img src="pics/table6.png" width="500"/>
+</p>
 
 ---
 
