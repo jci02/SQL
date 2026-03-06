@@ -28,6 +28,8 @@ Topics include:
 - Filtering rows with conditions
 - Comparison operators and logical operators (`AND`, `OR`, `NOT`)
 
+Imagine following dataset:
+
 <p align="center">
 <img src="pics/table.png" width="600"/>
 </p>
@@ -64,6 +66,12 @@ Topics include:
 - Aggregate functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`)
 - Grouping data using `GROUP BY`
 - Filtering aggregated results with `HAVING`
+
+Imagine following dataset:
+
+<p align="center">
+<img src="pics/table.png" width="600"/>
+</p>
 
 #### COUNT()
 
