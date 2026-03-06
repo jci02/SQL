@@ -144,11 +144,11 @@ Next, we'll talk about dates, because they come up very frequently in real-world
 
 The DATE format has the year first, then the month, and then the day. It looks like this:
 
-YYYY-[M]M-[D]D
+    YYYY-[M]M-[D]D
 
-    YYYY: Four-digit year
-    [M]M: One or two digit month
-    [D]D: One or two digit day
+- YYYY: Four-digit year
+- [M]M: One or two digit month
+- [D]D: One or two digit day
 
 So 2019-01-10 is interpreted as January 10, 2019.
 
