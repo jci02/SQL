@@ -28,6 +28,18 @@ Topics include:
 - Filtering rows with conditions
 - Comparison operators and logical operators (`AND`, `OR`, `NOT`)
 
+<p align="center">
+<img src="table.png" width="300"/>
+</p>
+
+<p align="center">
+<img src="table2.png" width="300"/>
+</p>
+
+<p align="center">
+<img src="table3.png" width="300"/>
+</p>
+
 ---
 
 ### 3. GROUP BY, HAVING & COUNT
