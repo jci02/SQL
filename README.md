@@ -247,7 +247,14 @@ A JOIN is used to combine rows from two or more tables within relational databas
 Topics include:
 - `INNER JOIN` $\rightarrow$ returns only the rows that have matching values in both tables.
 If there is no match, the row will not appear in the result.
-- `LEFT JOIN`
+
+- `LEFT JOIN` $\rightarrow$ returns:
+
+                                - All rows from the left table
+
+                                - Matching rows from the right table
+
+                                - If there is no match, SQL returns NULL
 - `RIGHT JOIN`
 - Understanding relationships between tables
 
