@@ -216,5 +216,34 @@ SELECT student_name, gpa, school_lunch
 FROM students
 LIMIT 5;
 
+SELECT student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes" AND gpa > 3.3;
 
+SELECT COUNT(*) -- student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes" AND gpa > 3.3;
 
+SELECT gpa -- student_name, school_lunch
+FROM students
+-- WHERE school_lunch = "Yes" AND gpa > 3.3
+ORDER BY gpa DESC;
+
+SELECT DISTINCT gpa -- student_name, school_lunch
+FROM students
+-- WHERE school_lunch = "Yes" AND gpa > 3.3
+ORDER BY gpa DESC;
+
+-- 9. sshow the final grades for each student: LEFT JOIN
+
+SELECT *
+FROM students;
+
+SELECT *
+FROM student_grades;
+
+SELECT *
+FROM students LEFT JOIN student_grades ON students.id = student_grades.student_id;
+
+SELECT students.id, students.student_name,student_grades.class_name, student_grades.final_grade
+FROM students LEFT JOIN student_grades ON students.id = student_grades.student_id;
