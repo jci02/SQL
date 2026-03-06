@@ -146,20 +146,75 @@ SELECT student_name, gpa, school_lunch
 FROM students
 WHERE school_lunch = "Yes";
 
+SELECT student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes" AND gpa > 3.3;
+
 -- 5. sort the students by gpa (ORDER BY)
 
 SELECT *
 FROM students
 ORDER BY gpa;
 
+SELECT student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes" AND gpa > 3.3
+ORDER BY gpa;
+
+SELECT student_name, gpa, school_lunch
+FROM students
+WHERE school_lunch = "Yes" AND gpa > 3.3
+ORDER BY gpa DESC;
 
 -- 6. show the average gpa for each grade level (GROUP BY)
 
+SELECT grade_level, AVG(gpa)
+FROM students
+GROUP BY grade_level;
+
+SELECT grade_level, AVG(gpa)
+FROM students
+GROUP BY grade_level
+ORDER BY grade_level;
+
+SELECT grade_level, MIN(gpa)
+FROM students
+GROUP BY grade_level;
+
+
+SELECT grade_level, MAX(gpa)
+FROM students
+GROUP BY grade_level;
+
+SELECT grade_level, COUNT(gpa)
+FROM students
+GROUP BY grade_level;
 
 -- 7. show the grade levels with an avergae gpa below 3.3 (HAVING)
+-- HAVING is a clause to filter any GROUP BY data
 
+SELECT grade_level, AVG(gpa) AS avg_gpa
+FROM students
+GROUP BY grade_level
+HAVING avg_gpa < 3.3
+ORDER BY grade_level;
 
-/*THE BIG 6*/
+/*THE BIG 6 In Order:
+	SELECT -> Choose columns to display
+    FROM -> Choose tables
+    WHERE -> Filter rows
+    GROUP BY -> Group rows of data in the table and aggregate them
+    HAVING -> Filter grouped rows
+    ORDER BY -> Sort rows
+*/
+
+/*MORE SQL CONCEPTS*/
+
+-- 8. special keywords: LIMIT | COUNT | DISTINCT
+
+SELECT student_name, gpa, school_lunch
+FROM students
+LIMIT 5;
 
 
 
