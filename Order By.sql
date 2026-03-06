@@ -27,6 +27,13 @@ GROUP BY grade_level
 HAVING avg_gpa < 3.3
 ORDER BY grade_level;
 
+
+SELECT Count(grade_level) AS count_grades
+FROM students
+WHERE gpa > 3.3
+GROUP BY grade_level
+ORDER BY grade_level;
+
 /*THE BIG 6 In Order:
 	SELECT -> Choose columns to display
     FROM -> Choose tables

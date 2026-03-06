@@ -242,10 +242,11 @@ Also, it's important to note that CTEs only exist inside the query where you cre
 ---
 
 ### 6. Joining Data
-Combining information from multiple tables within relational databases.
+A JOIN is used to combine rows from two or more tables within relational databases based on a related column.
 
 Topics include:
-- `INNER JOIN`
+- `INNER JOIN` $\rightarrow$ returns only the rows that have matching values in both tables.
+If there is no match, the row will not appear in the result.
 - `LEFT JOIN`
 - `RIGHT JOIN`
 - Understanding relationships between tables

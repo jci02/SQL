@@ -138,4 +138,14 @@ SELECT student_name, gpa, school_lunch
 FROM students
 WHERE school_lunch = "Yes" AND gpa > 3.3;
 
+SELECT *
+FROM student_grades;
+
+SELECT student_id, final_grade
+FROM student_grades
+WHERE final_grade >  90 AND final_grade < 100;
+
+SELECT student_id, final_grade
+FROM student_grades
+WHERE final_grade <  80 OR final_grade > 95;
 

@@ -4,7 +4,7 @@
 
 USE student_grades_db;
 
-SELECT grade_level, AVG(gpa)
+SELECT grade_level, AVG(gpa) AS avg_gpa
 FROM students
 GROUP BY grade_level;
 
@@ -13,7 +13,7 @@ FROM students
 GROUP BY grade_level;
 
 
-SELECT grade_level, MAX(gpa)
+SELECT grade_level, MAX(gpa) AS max_gpa
 FROM students
 GROUP BY grade_level;
 
@@ -27,8 +27,7 @@ GROUP BY grade_level;
 SELECT grade_level, AVG(gpa) AS avg_gpa
 FROM students
 GROUP BY grade_level
-HAVING avg_gpa < 3.3
-
+HAVING avg_gpa < 3.3;
 
 
 /*MORE SQL CONCEPTS*/
