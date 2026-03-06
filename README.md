@@ -29,15 +29,15 @@ Topics include:
 - Comparison operators and logical operators (`AND`, `OR`, `NOT`)
 
 <p align="center">
-<img src="table.png" width="300"/>
+<img src="table.png" width="500"/>
 </p>
 
 <p align="center">
-<img src="table2.png" width="300"/>
+<img src="table2.png" width="500"/>
 </p>
 
 <p align="center">
-<img src="table3.png" width="300"/>
+<img src="table3.png" width="500"/>
 </p>
 
 ---
