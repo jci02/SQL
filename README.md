@@ -32,6 +32,15 @@ Topics include:
 <img src="table.png" width="500"/>
 </p>
 
+#### SELECT ... FROM
+
+The most basic SQL query selects a single column from a single table. To do this,
+
+    - specify the column you want after the word SELECT, - and then
+    - specify the table after the word FROM.
+
+For instance, to select the Name column (from the pets table in the pet_records database in the bigquery-public-data project), our query would appear as follows:
+
 <p align="center">
 <img src="table2.png" width="500"/>
 </p>
