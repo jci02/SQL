@@ -29,7 +29,7 @@ Topics include:
 - Comparison operators and logical operators (`AND`, `OR`, `NOT`)
 
 <p align="center">
-<img src="pics/table.png" width="500"/>
+<img src="pics/table.png" width="600"/>
 </p>
 
 #### SELECT ... FROM
@@ -42,7 +42,7 @@ The most basic SQL query selects a single column from a single table. To do this
 For instance, to select the Name column (from the pets table in the pet_records database in the bigquery-public-data project), our query would appear as follows:
 
 <p align="center">
-<img src="pics/table2.png" width="500"/>
+<img src="pics/table2.png" width="600"/>
 </p>
 
 #### WHERE ...
@@ -52,7 +52,7 @@ We can return only the rows meeting specific conditions. Do this using the WHERE
 The query below returns the entries from the Name column that are in rows where the Animal column has the text 'Cat'.
 
 <p align="center">
-<img src="pics/table3.png" width="500"/>
+<img src="pics/table3.png" width="600"/>
 </p>
 
 ---
@@ -72,7 +72,7 @@ COUNT(), as you may have guessed from the name, returns a count of things. If yo
 For instance, if we SELECT the COUNT() of the ID column in the pets table, it will return 4, because there are 4 ID's in the table.
 
 <p align="center">
-<img src="pics/table4.png" width="500"/>
+<img src="pics/table4.png" width="600"/>
 </p>
 
 **COUNT()** is an example of an aggregate function, which takes many values and returns one. (Other examples of aggregate functions include SUM(), AVG(), MIN(), and MAX().)
@@ -84,7 +84,7 @@ GROUP BY takes the name of one or more columns, and treats all rows with the sam
 For example, say we want to know how many of each type of animal we have in the pets table. We can use GROUP BY to group together rows that have the same value in the Animal column, while using COUNT() to find out how many ID's we have in each group.
 
 <p align="center">
-<img src="pics/table5.png" width="500"/>
+<img src="pics/table5.png" width="600"/>
 </p>
 
 #### GROUP BY ... HAVING
@@ -94,7 +94,7 @@ HAVING is used in combination with GROUP BY to ignore groups that don't meet cer
 So this query, for example, will only include groups that have more than one ID in them.
 
 <p align="center">
-<img src="pics/table6.png" width="500"/>
+<img src="pics/table6.png" width="600"/>
 </p>
 
 ---
@@ -105,6 +105,21 @@ Sorting query results to make data easier to interpret.
 Topics include:
 - Sorting results in ascending and descending order
 - Ordering by multiple columns
+
+<p align="center">
+<img src="pics/table7.png" width="600"/>
+</p>
+
+#### ORDER BY
+
+ORDER BY is usually the last clause in your query, and it sorts the results returned by the rest of your query.
+
+Notice that the rows are not ordered by the ID column. We can quickly remedy this with the query below.
+
+
+<p align="center">
+<img src="pics/table8.png" width="600"/>
+</p>
 
 ---
 
