@@ -137,6 +137,30 @@ You can reverse the order using the DESC argument (short for 'descending'). The 
 <img src="pics/table10.png" width="600"/>
 </p>
 
+
+#### Dates
+
+Next, we'll talk about dates, because they come up very frequently in real-world databases. There are two ways that dates can be stored in BigQuery: as a DATE or as a DATETIME.
+
+The DATE format has the year first, then the month, and then the day. It looks like this:
+
+YYYY-[M]M-[D]D
+
+    YYYY: Four-digit year
+    [M]M: One or two digit month
+    [D]D: One or two digit day
+
+So 2019-01-10 is interpreted as January 10, 2019.
+
+The DATETIME format is like the date format ... but with time added at the end.
+EXTRACT
+
+Often you'll want to look at part of a date, like the year or the day. You can do this with EXTRACT. We'll illustrate this with a slightly different table, called pets_with_date.
+
+<p align="center">
+<img src="pics/table11.png" width="600"/>
+</p>
+
 ---
 
 ### 5. AS & WITH
